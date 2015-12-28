@@ -9,14 +9,11 @@ RUN apk add \
     openssl \
     ca-certificates \
     curl \
-    zlib \
-    libxml2 \
-    libxml2-dev \
     build-base \
-    libgcrypt \
     ruby-bundler \
     ruby-dev \
     ruby-libs \
+    ruby-nokogiri \
     gcc \
     g++ \
     make \

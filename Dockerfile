@@ -6,4 +6,9 @@ RUN apk update
 RUN apk add \
     ruby \
     ruby-bundler \
+    ruby-dev \
+    ruby-libs \
+    gcc \
     && rm /var/cache/apk/*
+
+COPY gemrc /root/.gemrc

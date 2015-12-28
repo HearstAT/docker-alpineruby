@@ -9,15 +9,26 @@ RUN apk add \
     openssl \
     ca-certificates \
     curl \
+    libffi \
+    gdbm \
+    ncurses \
+    readline \
+    sqlite-dev \
+    tzdata \
+    openssl-dev \
+    zlib-dev \
+    libxml2-dev \
+    libxslt-dev \
     build-base \
+    libgcrypt \
     ruby-bundler \
     ruby-dev \
     ruby-libs \
-    ruby-nokogiri \
     gcc \
     g++ \
     make \
     linux-headers \
-    && rm /var/cache/apk/*
+    && rm /var/cache/apk/* \
+    && gem install nokogiri -- --use-system-libraries
 
 COPY gemrc /root/.gemrc

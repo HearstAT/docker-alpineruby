@@ -9,6 +9,9 @@ RUN apk add \
     ruby-dev \
     ruby-libs \
     gcc \
+    g++\
+    make\
+    linux-headers\
     && rm /var/cache/apk/*
 
 COPY gemrc /root/.gemrc

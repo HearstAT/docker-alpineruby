@@ -5,6 +5,7 @@ MAINTAINER Hearst Automation Team <atat@hearst.com>
 RUN apk update
 RUN apk add \
     ruby \
+    bash \
     nodejs \
     openssl \
     ca-certificates \
